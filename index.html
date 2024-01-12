@@ -12,31 +12,56 @@
         <form action="">
             <fieldset>
                 <label for="first-name">Enter First name
-                    <input type="text" id="first-name" required/>
+                    <input type="text" id="first-name" required name="one"/>
                 </label>
                 <label for="last-name">Enter last name
-                    <input type="text" id="last-name" required/>
+                    <input type="text" id="last-name" required name="two"/>
                 </label>
                 <label for="email">Enter email
-                    <input type="email" id="email" required/>
+                    <input type="email" id="email" required name="three"/>
                 </label>
                 <label for="new-password">Enter password
-                    <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required/>
+                    <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required name="four"/>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Account Type (required)</legend>
                 <label>
-                    <input type="radio" name="account-type"> Personal
+                    <input class="inline" type="radio" name="account-type"> Personal
                 </label>
                 <label>
-                    <input type="radio" name="account-type"> Business
+                    <input class="inline" type="radio" name="account-type"> Business
                 </label>
             </fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <label for="profile-picture">
+                    Upload a profile picture:
+                    <input type="file" id="profile-picture" name="five">
+                </label>
+                <label for="age">
+                    Enter your age (years):
+                    <input type="number" min="13" max="120" id="age" name="six"/>
+                </label>
+                <label for="referrer">How did you hear about us?
+                    <select name="" id="referrer" name="seven">
+                    <option value="">(Select one)</option>
+                    <option value="1">WhatsApp</option>
+                    <option value="2">X</option>
+                    <option value="3">Linkedin</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+                <label for="bio"> Provide a bio:
+                    <textarea name="" id="bio" cols="30" rows="3" placeholder="I like coding" name="eight">
+
+
+                    </textarea>
+                </label>
+                
+            </fieldset>
             <fieldset>
                 <label for="terms-and-conditions">
-                    <input type="checkbox" id="terms-and-conditions"/>
+                    <input class="inline" type="checkbox" id="terms-and-conditions" name="nine"/>
                     I accept the <a href="#">terms and conditions</a>
                 </label>
             </fieldset>
