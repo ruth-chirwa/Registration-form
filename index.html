@@ -25,16 +25,22 @@
                 </label>
             </fieldset>
             <fieldset>
+                <legend>Account Type (required)</legend>
                 <label>
-                    <input type="radio"> Personal
+                    <input type="radio" name="account-type"> Personal
                 </label>
                 <label>
-                    <input type="radio"> Business
+                    <input type="radio" name="account-type"> Business
                 </label>
             </fieldset>
             <fieldset></fieldset>
-            <input type="submit" value="Submit"/>
+            <fieldset>
+                <label for="terms-and-conditions">
+                    <input type="checkbox" id="terms-and-conditions"/>
+                    I accept the <a href="#">terms and conditions</a>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit"/>           
         </form>
     </body>
 </html>
-
