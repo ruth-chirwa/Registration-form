@@ -12,20 +12,21 @@
         <form action="">
             <fieldset>
                 <label for="first-name">Enter First name
-                    <input type="text" id="first-name"/>
+                    <input type="text" id="first-name" required/>
                 </label>
                 <label for="last-name">Enter last name
-                    <input type="text" id="last-name"/>
+                    <input type="text" id="last-name" required/>
                 </label>
                 <label for="email">Enter email
-                    <input type="email" id="email"/>
+                    <input type="email" id="email" required/>
                 </label>
                 <label for="new-password">Enter password
-                    <input type="password" id="new-password"/>
+                    <input type="password" id="new-password" minlength="8" maxlength="12" required/>
                 </label>
             </fieldset>
             <fieldset></fieldset>
             <fieldset></fieldset>
+            <input type="submit" value="Submit"/>
         </form>
     </body>
 </html>
