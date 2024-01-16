@@ -3,7 +3,7 @@ body{
     height: 100vh;
     margin: 0;
     /*background-color: #2b6c7e;*/
-    /*background: linear-gradient(90deg,rgb(127, 40, 60)0%, rgba(120, 35, 67)50%, rgb(90, 45, 25)100%);*/
+    /*background: linear-gradient(90deg,rgb(127, 40, 60)0%, rgb(120, 35, 67)50%, rgb(90, 45, 25)100%);*/
     /*background-color: hsl(25, 90%, 19%);*/
     /*background-color: rgb(110, 45, 57);*/
     background-color: rgba(145, 27, 99, 86%);
@@ -27,7 +27,7 @@ form{
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
-    padding-bottom: 2em;
+   
 }
 
 fieldset{
@@ -43,13 +43,16 @@ fieldset:last-of-type{
 input, textarea, select{
     margin: 10px 0 0 0;
     width: 100%;
-    min-height: 2em;
+    min-height: 3em;
+    box-sizing: content-box;
+    border-radius: 5px;
 }
 
 .inline{
     width: unset;
    margin: 0 0.5em 0 0;
  vertical-align: middle;
+
 }
 
 input, textarea{
